@@ -215,6 +215,6 @@ class HeaterAUXHeaterDevice(MultiHvacDevice):
             return False
 
         if self._aux_heater_last_run.date() == datetime.datetime.now().date():
-            return True
+            return False
 
         return False
